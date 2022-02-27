@@ -1,10 +1,11 @@
 # Binaries for programs and plugins
-pg_timetable
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+
+.idea/
 
 # Test binary, build with `go test -c`
 *.test
@@ -13,7 +14,7 @@ pg_timetable
 *.out
 
 # Packages ouput folder
-dist
+
 
 # delve debugger file
-debug
+ 

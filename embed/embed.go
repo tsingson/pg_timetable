@@ -66,7 +66,7 @@ func Service(ctx context.Context) {
 	// ctx, cancel := context.WithCancel(context.Background())
 	// SetupCloseHandler(cancel)
 	// defer cancel()
-	p, _ := GetCurrentExecDir()
+	p, _ := load.GetCurrentExecDir()
 
 	f := p + "/pgt_config.toml"
 	fmt.Println("==========> ", f)

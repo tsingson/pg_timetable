@@ -1,25 +1,10 @@
-package embed
+package load
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
-
-	"github.com/spf13/viper"
-
-	"github.com/cybertec-postgresql/pg_timetable/internal/config"
 )
-
-func LoadConfig(f string) (*config.CmdOptions, error) {
-	v := viper.New()
-	v.SetConfigFile(f)
-	conf := &config.CmdOptions{}
-	if err := v.Unmarshal(conf); err != nil {
-		return nil, fmt.Errorf("Fatal error unmarshalling load file: %w", err)
-	}
-	return conf, nil
-}
 
 // GetCurrentExecDir get exec dir
 func GetCurrentExecDir() (dir string, err error) {
