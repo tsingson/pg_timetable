@@ -1,0 +1,36 @@
+ClientName = "pgt"
+Config = ""
+NoProgramTasks = false
+NoHelpMessage = false
+Version = true
+
+[Connection]
+  Host = "127.0.0.1"
+  Port = 5433
+  DBName = ""
+  User = "postgrest"
+  Password = "postgresPWD"
+  SSLMode = "disable"
+  PgURL = ""
+  Timeout = 45
+
+[Logging]
+  LogLevel = "info"
+  LogDBLevel = "info"
+  LogFile = "pgt_session.log"
+  LogFileFormat = "json"
+
+[Start]
+  File = ""
+  Init = false
+  Upgrade = false
+  Debug = false
+
+[Resource]
+  CronWorkers = 16
+  IntervalWorkers = 0
+  ChainTimeout = 0
+  TaskTimeout = 0
+
+[RestApi]
+  Port = 8008
